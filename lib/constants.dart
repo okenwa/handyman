@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'constants/size_config.dart';
 
-const kPrimaryColor = Color(0xFFFF7643);
-const kPrimaryColorB = Color(0xFFFFA53E);
+Color kPrimaryColor = Colors.blue[400];
+Color kPrimaryColorB = Colors.blue[300];
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kBlackColor = Colors.black;
 const kBlackTextColor = Colors.black;

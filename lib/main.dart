@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:handy_man/constants/size_config.dart';
 import 'package:handy_man/routes.dart';
+import 'package:handy_man/screens/splash_screen.dart';
 import 'package:handy_man/theme.dart';
+import 'package:introduction_screen/introduction_screen.dart';
 
 import 'constants.dart';
 
@@ -17,31 +19,36 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Home Base',
       theme: theme(),
-      //home: SplashScreen(),
-      initialRoute: SplashScreen.routeName,
+      home: IntroPage(),
+     // initialRoute: IntroductionScreen.routeName,
       routes: routes,
     );
   }
 }
 
-class SplashScreen extends StatelessWidget {
-  static String routeName = '/splash';
+class Main extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        children: [
-          Container(
-            color: kWhiteColor,
-            child: Text(
-              'HomeBase Pilot',
-              style: TextStyle(color: kPrimaryColor
-                  //fontSize: getProportionateScreenWidth(10),
-                  ),
-            ),
-          ),
-        ],
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: theme(),
+
+      // SafeArea(
+      //   child: Column(
+      //     children: [
+      //       Container(
+      //         color: kWhiteColor,
+      //         child: Text(
+      //           'HomeBase Pilot',
+      //           style: TextStyle(color: kPrimaryColor
+      //               //fontSize: getProportionateScreenWidth(10),
+      //               ),
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }
